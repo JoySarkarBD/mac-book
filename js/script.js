@@ -2,13 +2,13 @@
 
 function extarMemoryCost(memoryPrice) {
     const extraMemoryCost = document.getElementById('extra-memory-price');
-    let extraMemoryCostNum = 0;
+    let extraMemoryCostNumber = 0;
     if (memoryPrice == 180) {
-        extraMemoryCostNum = 180;
+        extraMemoryCostNumber = 180;
     } else if (memoryPrice == 0) {
-        extraMemoryCostNum = 0;
+        extraMemoryCostNumber = 0;
     }
-    extraMemoryCost.innerText = extraMemoryCostNum;
+    extraMemoryCost.innerText = extraMemoryCostNumber;
     extraProductsPrice();
     document.getElementById('discount-btn').disabled = false;
 }
@@ -27,15 +27,15 @@ document.getElementById('ex-memory-cost-removed').addEventListener('click', func
 
 function extarStorageCost(storagePrice) {
     const extraStorageCost = document.getElementById("extra-storage-price");
-    let extraStorageCostNum = 0;
+    let extraStorageCostNumber = 0;
     if (storagePrice == 180) {
-        extraStorageCostNum = 180;
+        extraStorageCostNumber = 180;
     } else if (storagePrice == 100) {
-        extraStorageCostNum = 100;
+        extraStorageCostNumber = 100;
     } else if (storagePrice == 0) {
-        extraStorageCostNum = 0;
+        extraStorageCostNumber = 0;
     }
-    extraStorageCost.innerText = extraStorageCostNum;
+    extraStorageCost.innerText = extraStorageCostNumber;
     extraProductsPrice();
     document.getElementById('discount-btn').disabled = false;
 }
@@ -56,13 +56,13 @@ document.getElementById("extra-storage-cost-none").addEventListener("click", fun
 
 function extardeiveryCost(deliveryPrice) {
     const extraDeliveryCost = document.getElementById('extra-delivery-price');
-    let extraDeliveryCostNum = 0;
+    let extraDeliveryCostNumber = 0;
     if (deliveryPrice == 20) {
-        extraDeliveryCostNum = 20;
+        extraDeliveryCostNumber = 20;
     } else if (deliveryPrice == 0) {
-        extraDeliveryCostNum = 0;
+        extraDeliveryCostNumber = 0;
     }
-    extraDeliveryCost.innerText = extraDeliveryCostNum;
+    extraDeliveryCost.innerText = extraDeliveryCostNumber;
     extraProductsPrice();
     document.getElementById('discount-btn').disabled = false;
 }
@@ -110,30 +110,3 @@ document.getElementById('discount-btn').addEventListener('click', function () {
     }
     cupon.value = '';
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
