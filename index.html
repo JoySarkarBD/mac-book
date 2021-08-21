@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i-Mac</title>
+
+    <!-- tail-wind css cdn link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <section class="w-11/12 mx-auto mt-8">
+        <div class="flex flex-row space-x-2 border-b-2 border-gray-300">
+            <!-- image of iMac -->
+            <div class="w-2/4 ">
+                <img src="images/mac.png" alt="">
+            </div>
+            <!-- Details and specification of iMac -->
+            <div class="w-2/4">
+                <h1 class="text-4xl font-semibold ">Customize you Blue 24-inch iMac with Apple M1 chip.</h1>
+                <p>
+                    Apple m1 chip with 8-core CPU with 4 performance cores and 3 efficiency cores, 7-core GPU, and
+                    16-core Neural Engine 8gb unfied memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse
+                    Keyboard - US Englsih
+                </p>
+                <!-- Customize specification part -->
+                <div>
+                    <p class="mt-8 mb-3 font-bold">Memory</p>
+                    <div class="mb-3 grid grid-flow-row grid-cols-2 gap-4">
+                        <div id="ex-memory-cost-removed"
+                            class="bg-transparent hover:bg-gray-800 text-black-700 hover:text-white py-2 px-4 border border-gray-400 hover:border-white rounded">
+                            8GB unified Memory</div>
+                        <div id="ex-memory-cost-added"
+                            class="bg-transparent hover:bg-gray-800 text-black-700 hover:text-white py-2 px-4 border border-gray-400 hover:border-white rounded">
+                            16GB unified Memory</div>
+                    </div>
+                    <p class="mb-3 font-bold">Storage</p>
+                    <div class="mb-3 grid grid-flow-row grid-cols-3 gap-4">
+                        <div id="extra-storage-cost-none"
+                            class="bg-transparent hover:bg-gray-800 text-black-700 hover:text-white py-2 px-4 border border-gray-400 hover:border-white rounded">
+                            256 GB SSD Storage</div>
+                        <div id="extra-storage-cost-added-one"
+                            class="bg-transparent hover:bg-gray-800 text-black-700 hover:text-white py-2 px-4 border border-gray-400 hover:border-white rounded">
+                            512 GB SSD Storage</div>
+                        <div id="extra-storage-cost-added-tow"
+                            class="bg-transparent hover:bg-gray-800 text-black-700 hover:text-white py-2 px-4 border border-gray-400 hover:border-white rounded">
+                            1 TB SSD Storage</div>
+                    </div>
+                    <p class="mb-3 font-bold">Choose your delivery option</p>
+                    <div class="mb-10 grid grid-flow-row grid-cols-2 gap-4">
+                        <div id="extra-delivery-cost-none"
+                            class="bg-transparent hover:bg-gray-800 text-black-700 hover:text-white py-2 px-4 border border-gray-400 hover:border-white rounded">
+                            Friday, Aug 25 Free Prime Delivery</div>
+                        <div id="extra-delivery-cost-added"
+                            class="bg-transparent hover:bg-gray-800 text-black-700 hover:text-white py-2 px-4 border border-gray-400 hover:border-white rounded">
+                            Friday, Aug 25 Free Delivery Charge $20
+                        </div>
+                    </div>
+
+                    <table class="table-auto mb-6">
+                        <tbody>
+                            <tr class="border-b-2 border-gray-300 ">
+                                <td class="w-44 font-semibold">Best Price</td>
+                                <td class="font-semibold">$ <span id="base-price">1299</span></td>
+                            </tr>
+                            <tr class="border-b-2 border-gray-300 ">
+                                <td class="w-44 font-semibold">Extra Memory Cost</td>
+                                <td class="font-semibold">$ <span id="extra-memory-price">0</span></td>
+                            </tr>
+                            <tr class="border-b-2 border-gray-300 ">
+                                <td class="w-44 font-semibold">Extra Storage Cost</td>
+                                <td class="font-semibold">$ <span id="extra-storage-price">0</span></td>
+                            </tr>
+                            <tr class="border-b-2 border-black ">
+                                <td class="w-44 font-semibold">Delivery Charge</td>
+                                <td class="font-semibold">$ <span id="extra-delivery-price">0</span></td>
+                            </tr>
+                            <tr class="border-b-2 border-gray-300 ">
+                                <td class="w-44 font-semibold">Total Price</td>
+                                <td class="font-semibold">$ <span id="total-cost">1299</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p class="font-semibold">Apply Pomo Code</p>
+                    <div class="flex items-center border-b border-teal-500 py-2">
+                        <input id="discount-code"
+                            class="appearance-none bg-transparent border border-gray-400 w-1/2 rounded-lg text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                            type="text">
+                        <button id="discount-btn"
+                            class="flex-shrink-0 border-transparent border-4 bg-red-600 font-semibold text-white text-teal-500 text-sm py-1 px-2 rounded">
+                            Apply
+                        </button>
+                    </div>
+    </section>
+    <section>
+        <h1 class="text-5xl font-medium mt-4 mb-4 text-center">TOTAL: $ <span id="discount-price">1299</span></h1>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
